@@ -1,0 +1,123 @@
+:root {
+    --foreground: #CAD3F5;
+    --background: #24273A;
+    --selection-foreground: #24273A;
+    --selection-background: #F4DBD6;
+    --url-color: #B7BDF8;
+    
+    --inactive-border-color: #8F97B7;
+    
+    --bell-border-color: #EE99A0;
+    
+    --active-tab-foreground: #181926;
+    --active-tab-background: #C6A0F6;
+    --inactive-tab-foreground: #CAD3F5;
+    --inactive-tab-background: #1E2030;
+    --tab-bar-background: #181926;
+   
+    --surface-1: #FFFFFF11;
+    --surface-2: #FFFFFF22;
+    --surface-3: #FFFFFF33;
+    --surface-4: #FFFFFF44;
+    --black: #484C64;
+    --purple: #C6A0F6;
+    --red: #ED8796;
+    --green: #A6DA95;
+    --yellow: #EED49F;
+    --blue: #8AADF4;
+    --magenta: #F5BDE6;
+    --cyan: #8BD5CA;
+    --white: #CAD3F5;
+    --grey: #A1AACB;
+}
+html {
+    height: 100%;
+    margin: 0px;
+}
+body {
+    background-color: var(--background);
+    color: var(--white);
+    height: 100%;
+    margin: 0px;
+    position: relative;
+    overflow: 'hidden';
+}
+h1 {
+    color: var(--purple);
+}
+main {
+    text-align: center;
+    height: 100%;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: var(--white);
+    margin-top: 5px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    max-width: 60%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#main-container > div {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    border: solid 2px var(--purple);
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.column > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 80px;
+    padding: 10px;
+    border: solid 0px black;
+    background-color: var(--surface-1);
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.column > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+
+}
+
+h3 {
+    color: var(--purple);
+    text-transform: uppercase;
+}
+
+h4 {
+    margin: 0px;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    left: 3px;
+    top: 7px;
+    writing-mode: vertical-rl;
+    color: var(--surface-4);
+    text-transform: uppercase;
+}
+
+#ram-image {
+    max-width: 200px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
