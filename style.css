@@ -33,6 +33,7 @@
 html {
     height: 100%;
     margin: 0px;
+    overflow: 'hidden';
 }
 body {
     background-color: var(--background);
@@ -48,6 +49,8 @@ h1 {
 main {
     text-align: center;
     height: 100%;
+    overflow: 'hidden';
+    margin: 0px;
 }
 
 a, a:hover {
@@ -58,21 +61,30 @@ a, a:hover {
 
 #main-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: left;
     gap: 10px;
-    max-width: 60%;
-    margin: auto;
     flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: center;
+    height: 80%;
+    overflow: 'hidden';
+    margin: 0px;
+    flex: 1;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#main-container > div {
+.column {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    min-width: 200px;
+    min-width: 300px;
     border: solid 2px var(--purple);
-    border-radius: 5px;
+    border-radius: 10px;
     padding-bottom: 10px;
+    overflow: hidden;
+    min-height: 0;
 }
 .column > div {
     display: flex;
@@ -80,12 +92,13 @@ a, a:hover {
     justify-content: center;
     position: relative;
     min-height: 80px;
-    padding: 10px;
+    padding: 10px 25px 10px 25px;
     border: solid 0px black;
+    border-radius: 10px;
     background-color: var(--surface-1);
-    margin: 10px 10px 0px 10px;
-    padding: 10px;
+    margin: 5px 5px 0px 5px;
     text-align: center;
+    overflow:hidden;
 }
 
 .column > div > div {
@@ -94,6 +107,7 @@ a, a:hover {
     justify-content: center;
     margin: auto;
     text-align: center;
+    overflow: hidden;
 
 }
 
@@ -111,13 +125,13 @@ h4 {
     writing-mode: vertical-rl;
     color: var(--surface-4);
     text-transform: uppercase;
+    font-sieze: 20px;
 }
 
 #ram-image {
-    max-width: 200px;
+    width: 300px;
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
 }
