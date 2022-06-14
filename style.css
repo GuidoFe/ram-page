@@ -45,6 +45,8 @@ body {
 }
 h1 {
     color: var(--purple);
+    font-variant: small-caps;
+    padding: 20px;
 }
 main {
     text-align: center;
@@ -114,6 +116,7 @@ a, a:hover {
 h3 {
     color: var(--purple);
     text-transform: uppercase;
+    font-variant: small-caps;
 }
 
 h4 {
@@ -125,7 +128,7 @@ h4 {
     writing-mode: vertical-rl;
     color: var(--surface-4);
     text-transform: uppercase;
-    font-sieze: 20px;
+    font-size: 17px;
 }
 
 #ram-image {
